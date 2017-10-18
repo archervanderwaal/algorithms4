@@ -17,7 +17,11 @@ Algorithms4是关于算法第四版(传说中的红宝书)的代码练习项目�
 - [链表实现栈](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/Stack.java)
 - [动态数组实现栈](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/ResizeArrayStack.java)
 - [链表实现队列](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/Queue.java)
-
+- [quick-find](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/uf/QuickFind.java)
+- [quick-union](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/uf/QuickUnion.java)
+- [加权quick-union](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/uf/WeightedQuickUnion.java)
+- [路径压缩quick-union](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/uf/PathCompressionWeightedQuickUnion.java)
+- [并查集博文](http://blog.csdn.net/strommaybin/article/details/52523149)
 ### [第二章 排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2)
 
 
