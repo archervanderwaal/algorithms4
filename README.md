@@ -12,6 +12,7 @@ Algorithms4是关于算法第四版(传说中的红宝书)的代码练习项目�
 有个动态扩容的方法要实现，这一块可以参考`java`中的`ArrayList.java`的扩容机制，`java`扩容机制不止在`ArrayList.java`里面有
 ，`HashMap.java`等等里面都有很经典的实现方式(所谓经典，就是扩散因子的选择)。
 
+- [三数和问题](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/ThreeSumFast.java)
 - [二分查找](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/BinarySearch.java)
 - [链表实现栈](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/Stack.java)
 - [动态数组实现栈](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/ResizeArrayStack.java)
