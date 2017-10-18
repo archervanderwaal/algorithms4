@@ -1,149 +1,28 @@
-package me.stormma.chapter2;
-
-import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package me.stormma.chapter2.sort;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * sort Example class
- * 
+ * The {@code SortFactory} class provides some sort types.
+ *
  * @author stormma
- * @date 2017/11/16
+ * @date 2017/10/18
  */
-public class SortExample {
-
-    private static Integer[] a = {1, 14, 2, 13, 3, 12, 4, 11, 5, 10, 6, 9, 7, 8};
-
-	public static void main(String[] args) {
-
-	}
-
-	@Test
-    public void testSelectSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("SelectSort"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testInsertSort() {
-       	SortUtils.sort(a, SortFactory.sortFactory.get("InsertSort"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testBubbleSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("BubbleSort"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testShellSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("ShellSort"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testTopDownMergeSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("MergeSortTD"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testBottomTopMergeSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("MergeSortBU"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testQuickSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("QuickSort"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testQuickSort3Way() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("QuickSort3Way"));
-        assert SortUtils.isSorted(a);
-        SortUtils.show(a);
-    }
-
-    @Test
-    public void testHeapSort() {
-	    SortUtils.sort(a, SortFactory.sortFactory.get("HeapSort"));
-	    assert SortUtils.isSorted(a);
-	    SortUtils.show(a);
-    }
-}
-
-interface Sort {
-    /**
-     * sort function
-     * 
-     * @param a Wait for sorted array.
-     */
-	void sort(Comparable[] a);
-}
-
-class SortUtils {
-
-    public static final Logger logger = LoggerFactory.getLogger(SortUtils.class);
-
-	public static boolean less(Comparable v, Comparable w) {
-		return v.compareTo(w) < 0;
-	}
-
-	public static void exch(Comparable[] a, int i, int j) {
-		Comparable t = a[i];
-		a[i] = a[j];
-		a[j] = t;
-		show(a);
-	}
-
-	public static void show(Comparable[] a) {
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i] + " ");
-		}
-		System.out.println();
-	}
-
-	public static boolean isSorted(Comparable[] a) {
-		for (int i = 1; i < a.length; i++) {
-			if (less(a[i], a[i-1])) {
-				return false;
-			}
-		}
-		return true;
-	}
-
-	public static void sort(Comparable[] a, Sort sort) {
-		sort.sort(a);
-	}
-}
-
-class SortFactory {
-	public static Map<String, Sort> sortFactory;
+public class SortFactory {
+	public static Map<SortType, Sort> sortFactory;
 
 	static {
 		sortFactory = new HashMap<>();
-		sortFactory.put("SelectSort", new SelectSort());
-		sortFactory.put("BubbleSort", new BubbleSort());
-		sortFactory.put("InsertSort", new InsertSort());
-		sortFactory.put("ShellSort", new ShellSort());
-		sortFactory.put("MergeSortTD", new MergeSortTD());
-		sortFactory.put("MergeSortBU", new MergeSortBU());
-		sortFactory.put("QuickSort", new QuickSort());
-		sortFactory.put("QuickSort3Way", new QuickSort3Way());
-		sortFactory.put("HeapSort", new HeapSort());
+		sortFactory.put(SortType.SELECT_SORT, new SelectSort());
+		sortFactory.put(SortType.BUBBLE_SORT, new BubbleSort());
+		sortFactory.put(SortType.INSERT_SORT, new InsertSort());
+		sortFactory.put(SortType.SHELL_SORT, new ShellSort());
+		sortFactory.put(SortType.MERGE_SORT_TD, new MergeSortTD());
+		sortFactory.put(SortType.MERGE_SORT_BU, new MergeSortBU());
+		sortFactory.put(SortType.QUICK_SORT, new QuickSort());
+		sortFactory.put(SortType.QUICK_SORT_THREE_WAY, new QuickSort3Way());
+		sortFactory.put(SortType.HEAP_SORT, new HeapSort());
 	}
 
 	static class SelectSort implements Sort {
