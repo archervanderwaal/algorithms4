@@ -23,7 +23,16 @@ Algorithms4是关于算法第四版(传说中的红宝书)的代码练习项目�
 - [路径压缩quick-union](https://github.com/StormMaybin/algorithms4/blob/master/src/main/java/me/stormma/chapter1/uf/PathCompressionWeightedQuickUnion.java)
 - [并查集博文](http://blog.csdn.net/strommaybin/article/details/52523149)
 ### [第二章 排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2)
-- [希尔排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/SortFactory.java/#shell_sort)
+- [常用排序方式博文总结]()
+- [选择排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/SelectSort.java)
+- [冒泡排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/BubbleSort.java)
+- [插入排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/InsertSort.java)
+- [自顶而下归并排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/MergeSortTD.java)
+- [自下而上归并排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/MergeSortBU.java)
+- [希尔排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/ShellSort.java)
+- [快速排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/QuickSort.java)
+- [三向切分快速排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/QuickSort3Way.java)
+- [堆排序](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/sort/HeapSort.java)
 
 ### [第三章 查找](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter3)
 
