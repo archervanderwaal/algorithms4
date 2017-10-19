@@ -11,63 +11,63 @@ public class SortTest {
 
     @Test
     public void testSelectSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("SelectSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.SELECT_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testInsertSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("InsertSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.INSERT_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testBubbleSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("BubbleSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.BUBBLE_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testShellSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("ShellSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.SHELL_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testTopDownMergeSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("MergeSortTD"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.MERGE_SORT_TD));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testBottomTopMergeSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("MergeSortBU"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.MERGE_SORT_BU));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testQuickSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("QuickSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.QUICK_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testQuickSort3Way() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("QuickSort3Way"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.QUICK_SORT_THREE_WAY));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
 
     @Test
     public void testHeapSort() {
-        SortUtils.sort(a, SortFactory.sortFactory.get("HeapSort"));
+        SortUtils.sort(a, SortFactory.sortFactory.get(SortType.HEAP_SORT));
         assert SortUtils.isSorted(a);
         SortUtils.show(a);
     }
