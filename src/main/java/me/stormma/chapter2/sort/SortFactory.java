@@ -69,6 +69,9 @@ public class SortFactory {
 		}
 	}
 
+	/**
+	 * <div id="shell_sort"></div>
+	 */
 	static class ShellSort implements Sort {
 		@Override
 		public void sort(Comparable[] a) {
