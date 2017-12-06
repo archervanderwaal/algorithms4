@@ -7,6 +7,7 @@ package me.stormma.chapter4.section4_1;
  */
 public class DepthFirstSearch {
 
+    /** 标记数组*/
     private boolean[] marked;
 
     private int count;
