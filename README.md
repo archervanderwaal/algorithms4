@@ -48,3 +48,4 @@ Algorithms4是关于算法第四版(传说中的红宝书)的代码练习项目�
 - [五环图](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter4/section4_1/Cycle.java)
 - [双色问题](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter4/section4_1/TwoColor.java)
 #### 4.2有向图
+- [有向图实现](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter4/section4_2/Digraph.java)
