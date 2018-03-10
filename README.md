@@ -36,9 +36,9 @@ Algorithms4是关于算法第四版(传说中的红宝书)的代码练习项目�
 - [荷兰国旗问题](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/SortColors.java)
 - [优先队列](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter2/PriorityQueue.java)
 
-### [第三章 查找](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter3)
-
-
+### [第三章 树](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter3)
+- [最小顶堆实现](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter3/MinHeapArray.java)
+- [哈夫曼树](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter3/HuffmanTree.java)
 ### [第四章 图](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter4)
 #### 4.1无向图
 - [图的表示](https://github.com/StormMaybin/algorithms4/tree/master/src/main/java/me/stormma/chapter4/section4_1/Graph.java)
