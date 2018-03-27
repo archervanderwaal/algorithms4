@@ -22,7 +22,6 @@ public class HuffmanTree<E extends Comparable> {
         public Node(E data, double weight) {
             this.data = data;
             this.weight = weight;
-            // 构造最小堆
         }
 
         @Override
